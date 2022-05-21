@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -22,12 +23,11 @@ const Home: NextPage = () => {
             </a>
             &nbsp;streams at the same time (as long as your computer can handle
             it). Simply put the streams you want in the url. For example:&nbsp;
-            <a
-              href="/pbjt__/chlocakes"
-              className="text-blue-500 cursor-pointer hover:underline"
-            >
-              localhost:3000/pbjt__/chlocakes
-            </a>
+            <Link href="/pbjt__/chlocakes">
+              <a className="text-blue-500 cursor-pointer hover:underline">
+                localhost:3000/pbjt__/chlocakes
+              </a>
+            </Link>
             . Happy streamwatching!
           </p>
         </div>
