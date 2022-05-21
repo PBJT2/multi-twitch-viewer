@@ -27,7 +27,7 @@ const Home: NextPage<Props> = ({ host }) => {
               Welcome to the PBJT Multi Twitch Player! You can use this site to
               watch any number of&nbsp;
               <a
-                href=""
+                href="https://www.twitch.tv/"
                 className="text-blue-500 cursor-pointer hover:underline"
               >
                 twitch.tv
