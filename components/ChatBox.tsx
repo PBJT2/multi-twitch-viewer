@@ -32,7 +32,7 @@ const ChatBox: React.FC<ChatBoxType> = ({ streamList }: ChatBoxType) => {
           <iframe
             className={activeChat === streamer ? "block" : "hidden"}
             key={streamer}
-            src={`https://www.twitch.tv/embed/${streamer}/chat?parent=localhost&darkpopout`}
+            src={`https://www.twitch.tv/embed/${streamer}/chat?parent=${window.location.host}&darkpopout`}
             height="100%"
             width="100%"
           ></iframe>

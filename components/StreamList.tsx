@@ -13,7 +13,7 @@ const StreamList: React.FC<StreamListProps> = ({
         return (
           <li className="grow basis-[400px]" key={streamer}>
             <iframe
-              src={`https://player.twitch.tv/?muted=true&channel=${streamer}&parent=localhost`}
+              src={`https://player.twitch.tv/?muted=true&channel=${streamer}&parent=${window.location.host}`}
               height="100%"
               width="100%"
               allowFullScreen
