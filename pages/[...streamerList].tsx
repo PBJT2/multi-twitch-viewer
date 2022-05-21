@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { NextPage } from "next";
 import StreamList from "../components/StreamList";
-import ChatBox from "../components/Chatbox";
+import ChatBox from "../components/ChatBox";
 import { useState } from "react";
 
 const StreamPage: NextPage = () => {
