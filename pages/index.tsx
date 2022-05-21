@@ -2,7 +2,11 @@ import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 
-const Home: NextPage = ({ host }) => {
+type Props = {
+  host: string;
+};
+
+const Home: NextPage<Props> = ({ host }) => {
   if (typeof window !== "undefined") {
     const hostname = window.location.hostname;
   }
