@@ -8,7 +8,7 @@ const StreamList: React.FC<StreamListProps> = ({
   streamList,
 }: StreamListProps) => {
   return (
-    <ul className="flex flex-wrap gap-1 bg-black">
+    <ul className="flex flex-wrap gap-1 bg-black grow">
       {streamList.map((streamer) => {
         return (
           <li className="grow" key={streamer}>
