@@ -8,10 +8,10 @@ const StreamList: React.FC<StreamListProps> = ({
   streamList,
 }: StreamListProps) => {
   return (
-    <ul className="flex flex-wrap min-h-screen w-full gap-1 bg-black">
+    <ul className="flex flex-wrap gap-1 bg-black">
       {streamList.map((streamer) => {
         return (
-          <li className="grow basis-[400px]" key={streamer}>
+          <li className="grow" key={streamer}>
             <iframe
               src={`https://player.twitch.tv/?muted=true&channel=${streamer}&parent=${window.location.host}`}
               height="100%"

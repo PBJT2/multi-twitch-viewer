@@ -21,10 +21,10 @@ const StreamPage: NextPage = () => {
       <main>
         <div
           className={`grid  ${
-            chatActive ? "grid-cols-[1fr_400px]" : "grid-cols-1"
-          }  bg-black grid-rows-[1fr_40px]`}
+            chatActive ? "grid-cols-[1fr_20rem]" : "grid-cols-1"
+          }  bg-black grid-rows-[1fr_2rem] max-h-screen min-h-screen`}
         >
-          <section className="flex row-span-1">
+          <section className="flex row-span-1 col-span-1">
             <StreamList streamList={noDupesList}></StreamList>
           </section>
           <section
@@ -34,7 +34,7 @@ const StreamPage: NextPage = () => {
           </section>
           <button
             onClick={toggleChat}
-            className="text-blue-500 col-span-2 border-2 border-blue-500 hover:bg-gray-900"
+            className="bg-inherit text-blue-500 col-span-2 border-2 border-blue-500 hover:bg-gray-900"
           >
             Toggle Chat
           </button>
